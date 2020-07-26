@@ -43,8 +43,8 @@ class GiveMoney
         $events->listen(Saving::class, [$this, 'userWillBeSaved']);
         $events->listen(Registered::class, [$this, 'userWasRegistered']);
         $events->listen(DiscussionWasApproveDeal::class, [$this, 'dealWasApproved']);
-        $events->listen(DiscussionWasHotDeal::class, [$this, 'dealWasFeatured']);
-        $events->listen(DiscussionWasFeatured::class, [$this, 'dealWasSupered']);
+        $events->listen(DiscussionWasFeatured::class, [$this, 'dealWasFeatured']);
+        $events->listen(DiscussionWasHotDeal::class, [$this, 'dealWasSupered']);
         $events->listen(DiscussionWasUnFeatured::class, [$this, 'dealWasUnFeatured']);
         $events->listen(DiscussionWasUnHotDeal::class, [$this, 'dealWasUnSupered']);
     }
