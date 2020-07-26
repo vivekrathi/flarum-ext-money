@@ -14,19 +14,23 @@ app.initializers.add('antoinefr-money', function () {
 			if (this.props.user.data.attributes.money !== 0) {
 				items.add(
 					'money',
-					app.forum.data.attributes['antoinefr-money.moneyname'].replace(
-						'[money]',
-						this.props.user.data.attributes['money']
-					)
+					this.props.user.data.attributes['money'] +
+						' ' +
+						app.forum.data.attributes['antoinefr-money.moneyname'].replace(
+							'[money]',
+							this.props.user.data.attributes['money']
+						)
 				);
 			}
 		} else {
 			items.add(
 				'money',
-				app.forum.data.attributes['antoinefr-money.moneyname'].replace(
-					'[money]',
-					this.props.user.data.attributes['money']
-				)
+				this.props.user.data.attributes['money'] +
+					' ' +
+					app.forum.data.attributes['antoinefr-money.moneyname'].replace(
+						'[money]',
+						this.props.user.data.attributes['money']
+					)
 			);
 		}
 	});
