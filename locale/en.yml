@@ -5,8 +5,14 @@ antoinefr-money:
       moneyforpost: Money given for a new post
       moneyfordiscussion: Money given for a new discussion
       moneyname: "Name of the money (ex: [money] points)"
+      moneyicon: "Icon of the money"
       postminimumlength: Post minimum length to get the money (0 to disable)
       noshowzero: Do not show if the value is zero
+      onreferral: Money given on successful referral
+      onsignup: Money given on Sign Up
+      moneyfordeal: Money given when a deal is approved
+      moneyforvfmdeal: Money given when a deal is value for money
+      moneyforsuperdeal: Money given when a deal is Super Deal
     permissions:
       edit_money_label: Edit money
   forum:
